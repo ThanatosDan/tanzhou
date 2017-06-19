@@ -1,0 +1,11 @@
+@charset 'utf-8';
+  /*去除默认样式 start*/
+  *{margin:0;padding:0;}
+  body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+  ol,ul,li{list-style:none;margin:0;padding:0;}
+  a{text-decoration:none;color:inherit;}
+  img{border:none;}
+  /*去除默认样式 end*/
+  /*清除浮动*/
+  .clearfix:after{clear: both;content: "";display: block;}
+  body{font:14px 'PingFang SC,Helvetica Neue,Helvetica,Arial,Hiragino Sans GB,Microsoft Yahei,\\5FAE\8F6F\96C5\9ED1,STHeiti,\\534E\6587\7EC6\9ED1,sans-serif';color:#666;}
