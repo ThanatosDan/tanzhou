@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <meta name="Author" content="追梦" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>11-2-追梦</title>
+    <style type="text/css">
+      /*去除默认样式 start*/
+      *{margin:0;padding:0;}
+      body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+      ol,ul,li{list-style:none;margin:0;padding:0;}
+      a{text-decoration:none; color: inherit;}
+      img{border:none;}
+      .clearfix:after{display: block;clear: both; content: "";}
+      /*去除默认样式 end*/
+
+      .box{width: 1000px; margin: 50px auto;font-size: 14px;}
+      .box .top{height:35px;border: 1px solid #999;margin-bottom: 20px;}
+      .box>.top>a{line-height:35px; display: inline-block;padding: 0px 10px;float: left; margin-top: -1px;}
+      .box>.top>.tab-sel{line-height:34px;border-top: 3px #33494c solid;background-color: white;border-right: 1px solid #999;}
+
+      .box>.banner{position: relative;}
+      .box>.banner>ul>li{float: left;}
+      .box>.banner>ul>li>a{display:block;position: relative;margin: 1px 1px;}
+      .box>.banner>ul>li>a:hover{border-left: 1px solid #33494c;border-top: 1px solid #33494c;margin-left: 0px; margin-top: 0px;}
+      .box>.banner>ul>li>a>img{vertical-align: bottom;}
+      .box>.banner>ul>li>a>.item-desc{position: absolute;width:100%;text-align: center;bottom: 0px;color: white;background-color:rgba(0,0,0,.4);line-height: 30px;font-size: 12px;}
+
+      .box>.banner>span{display: inline-block;width: 29px; height:43px; background: url("images/demo1/6.png") no-repeat; position: absolute; top: 50%; margin-top: -21px;margin-left: 1px;}
+      .box>.banner>.b-right{margin-right: 1px; right: 0px;background-position: -29px 0;}
+      .box>.banner>.b-left:hover{background-position: -0px -43px;}
+      .box>.banner>.b-right:hover{background-position: -29px -43px;}
+
+    </style>
+
+  </head>
+  <body>
+    <div class="box">
+      <div class="top clearfix">
+        <a href="" class="tab-sel">潭州热点</a>
+        <a href="">猜你喜欢</a>
+      </div>
+      <div class="banner">
+        <ul class="clearfix">
+          <li>
+            <a href="#"><img src="images/demo1/1.png" width="198" height="132" />
+            <p class="item-desc">潭州建筑装饰设计学院</p></a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/demo1/2.png" width="198" height="132" />
+              <p class="item-desc">潭州2016年设计大赛</p>
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="images/demo1/3.png" width="198" height="132" />
+            <p class="item-desc">潭州游戏设计风暴</p></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/demo1/4.png" width="198" height="132" />
+            <p class="item-desc">谁是潭州最帅老师</p></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/demo1/5.png" width="198" height="132" />
+            <p class="item-desc">职场人高薪就职之道</p></a>
+          </li>
+
+        </ul>
+        <span class="b-left"></span>
+        <span class="b-right"></span>
+      </div>
+    </div>
+  </body>
+</html>

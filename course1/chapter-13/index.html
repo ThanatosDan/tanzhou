@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <meta name="Author" content="追梦" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>13-1-追梦</title>
+    <style type="text/css">
+      /*去除默认样式 start*/
+      *{margin:0;padding:0;}
+      body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+      ol,ul,li{list-style:none;margin:0;padding:0;}
+      a{text-decoration:none;}
+      img{border:none;}
+      /*去除默认样式 end*/
+
+      .box{margin: 50px auto; width: 760px; padding: 20px 20px 10px 20px;color: #666;box-shadow: 0px 0px 10px 0px rgba(0,0,0, .8);}
+      .box .input-box{width: 285px; height: 35px;padding-left: 5px;}
+      .box h1{width:177px; height:29px;background: url("images/feedback1.png") no-repeat;margin-bottom: 20px;}
+      .box table select{width: 200px; height: 35px;border: none;
+        border-radius: 0;
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        background-color: #fff;
+        border:1px solid #ccc; 
+        padding-left: 5px;
+        background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+      }
+      .box table select::-ms-expand { display: none; }
+      .box p{font-size: 12px;}
+      .box table{width: 100%; font-size: 12px;border-collapse:collapse;}
+      .box table td{padding:5px;}
+      .box table tr td:nth-child(2){width: 287px;}
+      .box table tr td:nth-child(4){width: 287px;}
+      .box table tr td:nth-child(1){text-align: right;}
+      .box table tr td:nth-child(3){text-align: right;}
+      .box table .other-con{width: 100%;}
+      .box table .submit-btn{width: 123px; height:37px;border:none;background: url("images/but_submit.jpg") no-repeat;}
+      .box table .reset-btn{width: 123px; height:37px;border:none;background: url("images/but_reset.jpg") no-repeat;background-size: cover;}
+
+    </style>
+
+  </head>
+  <body>
+    <div class="box">
+      <h1></h1>
+      <p >如果您有任何建议相对我们说, 可以通过下面的方式发送信息给我们。我们将非常乐意跟你畅快的交流！请留下您准确的联系方式，我们承诺对您的个人信息保密。</p>
+      <form action="#" method="post">
+        <table >
+          <tr>
+            <td>姓名:</td>
+            <td>
+              <input class="input-box" type="text" name="u_name" placeholder="请输入姓名" />
+            </td>
+            <td>性别:</td>
+            <td>
+              <select name="sex">
+                <option value="male">男</option>
+                <option value="famale">女</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>手机:</td>
+            <td>
+              <input class="input-box"  type="text" name="u_phone" placeholder="请输入手机号" />
+            </td>
+            <td>年龄:</td>
+            <td>
+              <input class="input-box" type="text" name="u_name" placeholder="请输入姓名" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>喜欢的课程:</td>
+            <td>
+              <select name="course">
+                <option value="1">网页制作</option>
+                <option value="2">平面设计</option>
+                <option value="3">动漫游戏</option>
+              </select>
+            </td>
+            <td>QQ:</td>
+            <td>
+              <input class="input-box" type="text" name="u_qq" placeholder="请输入qq号" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>详细地址:</td>
+            <td>
+              <input class="input-box"  type="text" name="u_qq" placeholder="请输入详细地址" />
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>补充内容: </td>
+            <td colspan="3">
+              <textarea class="other-con" name="other" placeholder="请输入补充内容" rows="5"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input class="submit-btn" type="submit" value="">
+              <input class="reset-btn" type="reset" value="">
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>

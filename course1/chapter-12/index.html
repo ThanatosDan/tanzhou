@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+    <meta name="Author" content="追梦" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>12-1-追梦</title>
+    <style type="text/css">
+      /*去除默认样式 start*/
+      *{margin:0;padding:0;}
+      body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+      ol,ul,li{list-style:none;margin:0;padding:0;}
+      a{text-decoration:none;}
+      img{border:none;}
+      /*去除默认样式 end*/
+
+      .user{width: 380px; border: 1px solid #ccc;border-radius: 10px;margin: 50px auto;text-align: right;padding: 50px 50px 30px 30px;}
+      .user div{vertical-align: center;margin-bottom: 20px;}
+      .user div>input{width:290px;font-size: 16px; border: 1px solid #ccc;line-height: 40px;border-radius:5px;margin-left: 10px;padding-left: 10px;color:#666;}
+      .user .btn{background: #3d6fad;border-radius: 5px;border: none;color: white;padding: 5px 20px;font-size: 14px;}
+      .user #login{padding: 5px 15px;margin-left: 20px;}
+
+      .user-prompt{position: absolute; left: 100%;top:-10px;display: none;white-space:nowrap;}
+      .user-prompt .p-arrow{width:0; height:0;border-right: #4faacf 10px solid;border-top: transparent 10px solid; border-bottom: transparent 10px solid;display: inline-block; vertical-align: middle;}
+      .user-prompt .p-con{color: white;background-color: #4faacf;border-radius: 5px;padding: 10px 15px;display: inline-block;vertical-align: middle;text-align: left;}
+      .user .u-email{position: relative;}
+      .user .u-name{position: relative;}
+      .user .u-name:hover #u-p-name{display: inline-block;}
+      .user .u-email:hover #u-p-email{display: inline-block;}
+
+    </style>
+
+  </head>
+  <body>
+    <div class="user">
+      <form action="#" method="post">
+        <div class="u-name">
+          用户名<input  name="user-name" placeholder="输入英文字母或数字"/>
+          <div class="user-prompt" id="u-p-name"> <span class="p-arrow"></span><span class="p-con">用户名必须为4--16位数字或者英文字<br />母</span></div> 
+        </div>
+        <div>
+          密码<input type="password" name="pass" placeholder="123456"/>
+        </div>
+        <div>
+          确认密码<input type="password" name="confirm-pass" placeholder="123456"/>
+        </div>
+        <div class="u-email">
+          email<input name="email" placeholder="123456789@qq.com"/>
+          <div class="user-prompt" id="u-p-email"> <span class="p-arrow"></span><span class="p-con">Email格式要正确</span></div> 
+        </div>
+        <div>
+          昵称<input name="nick" placeholder="输入英文字母或数字"/>
+        </div>
+        <input class="btn"  type="submit" value="注册"/>
+        <input class="btn" id="login" type="button" value="我有账号,我要登录">
+      </form>
+    </div>
+  </body>
+</html>
