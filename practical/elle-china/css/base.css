@@ -4,7 +4,7 @@
   body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
   ol,ul,li{list-style:none;margin:0;padding:0;}
   a{text-decoration:none;color:inherit;vertical-align: bottom;}
-  img{border:none;}
+  img{border:none;vertical-align: bottom;}
   /*去除默认样式 end*/
   /*清除浮动*/
   .clearfix:after{clear: both;content: "";display: block;}
