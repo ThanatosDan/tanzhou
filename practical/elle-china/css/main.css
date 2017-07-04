@@ -28,17 +28,18 @@
 .top .user .tu-user .register:hover:before{background-position: 0 -106px;}
 .top .user .tu-user .login:before{background-position: 0 -236px;}
 .top .user .tu-user .login:hover:before{background-position: 0 -279px;}
-.top .user .tu-follow{position: relative;}
+.top .user .tu-follow{position: relative; z-index: 11;}
 .top .user .tu-follow>a:before{width: 168px;height: 41px;background:url("../images/top/4.jpg") no-repeat;vertical-align: top;margin-left: 15px;border-right: 1px solid #000;}
 .top .user .tu-follow:hover>a:before{background:url("../images/top/4-hover.jpg") no-repeat;}
-.top .user .tu-follow .tuf-info{position: absolute;width: 168px; height: 37px; top: 100%;left: 0;background: url("../images/top/red-icon.jpg") no-repeat;margin-left: 15px;display: none;border-top: transparent 1px solid; z-index: 10;}
-.top .user .tu-follow:hover .tuf-info{display: block;}
+.top .user .tu-follow .tuf-info{position: absolute;width: 168px; height: 37px; top: 0%;left: 0;background: url("../images/top/red-icon.jpg") no-repeat;margin-left: 15px;border-top: transparent 1px solid; z-index: -1; transition: top .3s ease;}
+.top .user .tu-follow:hover .tuf-info{top: 100%;}
 .top .user .tu-follow .tuf-info li{float: left;width: 56px;height: 37px;}
 .top .user .tu-follow .tuf-info li>a{display: block; width: 100%; height: 100%;}
-.top .user .tu-follow .tuf-info .tufi-wx>.tufiw-qrcode{top: 100%;left: 0;position: absolute;display: none;}
-.top .user .tu-follow .tuf-info .tufi-wx:hover>.tufiw-qrcode{display: block;}
-.top .user .tu-follow .tuf-info .tufi-wx>.tufiw-qrcode>a{display: block; width: 144px;height: 144px; background: url("../images/top/6.png") no-repeat; }
-.top .user .tu-follow .tuf-info .tufi-wx>.tufiw-qrcode>em{display: inline-block;width: 0;height: 0;position: absolute;top: 0;left: 25px;border-top: 5px #f00 solid;border-left: transparent 5px solid;border-right: transparent 5px solid;}
+.top .user .tu-follow .tuf-info .tufi-wx>.tufiw-qrcode{top: 100%;left: 0;position: absolute;opacity:0;}
+.top .user .tu-follow .tuf-info .tufi-wx:hover>.tufiw-qrcode{opacity:1;}
+.top .user .tu-follow .tuf-info .tufi-wx:hover>.tufiw-qrcode>a{left: 0;}
+.top .user .tu-follow .tuf-info .tufi-wx>.tufiw-qrcode>a{position: absolute; left: 28px; top: 0; display: block; width: 144px;height: 144px; background: url("../images/top/6.png") no-repeat; transition: left .3s ease;}
+.top .user .tu-follow .tuf-info .tufi-wx>.tufiw-qrcode>em{display: inline-block;width: 0;height: 0;position: absolute;top: 0;left: 25px;border-top: 5px #f00 solid;border-left: transparent 5px solid;border-right: transparent 5px solid;z-index: 10;}
 .top .user .tu-search{display: block; float: right;line-height: 41px;}
 .top .user .tu-search:before{display: inline-block;background: url("../images/top/3.png"); content: "";vertical-align: middle;background-position: 0 -322px; width:27px; height:27px;}
 .top .user .tu-search:hover:before{background-position: 0 -369px;}
@@ -47,6 +48,7 @@
 .con{width: 1000px; margin: 0 auto;}
 /*通用部分*/
 .con .com-img-style20{float: left;margin-top: 30px;}
+.con .com-img-style20>a{overflow: hidden;}
 .con .com-img-style20>.cis-desc{text-align: center; font-size: 20px; margin-top: 20px; padding-bottom: 20px; border-bottom: 1px #000 dotted;line-height: 20px;}
 .con .com-img-style20>a{position: relative; display: inline-block;}
 .con .com-img-style20 .cis-play{display: inline-block; position: absolute; top: 50%; left: 50%; width: 66px; height: 66px;margin-left: -33px; margin-top: -33px;background: url("../images/common/icons-sprite.png") no-repeat 0 -368px;}
@@ -115,7 +117,7 @@
 .con>.daily>.d-left>.dl-title>.dlt-tit>span{width:300px;height: 36px; margin-left: 15px; background: url("../images/con/daily/dailyelle.png") no-repeat;}
 .con>.daily>.d-left>.dl-con>li.mr28{margin-right: 28px;}
 .con>.daily>.d-left>.dl-con>li.mt28{margin-top: 28px;}
-.con>.daily>.d-left>.dl-con>li>.dlc-img{position: relative; display: inline-block;}
+.con>.daily>.d-left>.dl-con>li>.dlc-img{position: relative; display: inline-block;overflow: hidden;}
 .con>.daily>.d-left>.dl-con>li>.dlc-img>.cis-play{display: inline-block; position: absolute; top: 50%; left: 50%; width: 66px; height: 66px;margin-left: -33px; margin-top: -33px;background: url("../images/common/icons-sprite.png") no-repeat 0 -368px;}
 .con>.daily>.d-left>.dl-con>li>.dlc-img:hover .cis-play{background-position: 0 -437px}
 .con>.daily>.d-left>.dl-con>li{float: left; width: 301px; height: 301px;padding: 10px; background: url("../images/con/daily/d-bg.jpg"); text-align: center;}

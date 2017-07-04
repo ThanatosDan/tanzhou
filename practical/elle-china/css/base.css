@@ -9,3 +9,10 @@
   /*清除浮动*/
   .clearfix:after{clear: both;content: "";display: block;}
   body{font:14px 'Microsoft Yahei','微软雅黑','Verdana';color:#000;}
+  .scan-anima{overflow: hidden;}
+  .scale-anim{transition-duration: .4s;}
+  .scale-anim:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+  }
