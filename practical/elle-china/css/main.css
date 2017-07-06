@@ -178,8 +178,8 @@
 .footer>.f-bottom .fb-top>.fbt-left>.fbt-share>li>a{display: inline-block; width: 41px; height:22px;background: url("../images/footer/shareicon.png") no-repeat;}
 .footer>.f-bottom .fb-top>.fbt-left>.fbt-share>li>a:hover{background-image:url("../images/footer/shareicon_hover.png");}
 .footer>.f-bottom .fb-top>.fbt-left>.fbt-share>.weixin>a{position: relative; background-position: 8px 0px;}
-.footer>.f-bottom .fb-top>.fbt-left>.fbt-share>.weixin>a>i{position: absolute;left: 30%;bottom: 120%; display: none;width: 144px;height: 144px; background: url("../images/footer/weixin-qrcod.png") no-repeat;}
-.footer>.f-bottom .fb-top>.fbt-left>.fbt-share>.weixin>a:hover>i{display: block;}
+.footer>.f-bottom .fb-top>.fbt-left>.fbt-share>.weixin>a>i{position: absolute;left: 30%;bottom: 120%; width: 144px;height: 144px; background: url("../images/footer/weixin-qrcod.png") no-repeat; transition:all .5s linear; visibility: hidden; opacity: 0;}
+.footer>.f-bottom .fb-top>.fbt-left>.fbt-share>.weixin>a:hover>i{visibility: visible; opacity: 1;}
 .footer>.f-bottom .fb-top>.fbt-left>.fbt-share>.xinlang>a{background-position: -28px 0px;}
 .footer>.f-bottom .fb-top>.fbt-left>.fbt-share>.kongjian>a{background-position: -67px 0px;}
 .footer>.f-bottom .fb-top>.fbt-left>.fbt-share>.qq-wb>a{background-position: -109px 0px;}
