@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///Users/KevinDan/Desktop/%E6%9C%A8%E9%A9%AC/test/untitled.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="Author" content="追梦">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>transform skew例子</title>
+    <style type="text/css">
+      /*去除默认样式 start*/
+      *{margin:0;padding:0;}
+      body,dl,dd,p,h1,h2,h3,h4,h5,h6{margin:0;}
+      ol,ul,li{list-style:none;margin:0;padding:0;}
+      a{text-decoration:none;color: inherit;}
+      img{border:none;}
+      .clearfix:after{clear: both;content: "";display: block;}
+      /*去除默认样式 end*/
+      body{background: skyblue;}
+      .box{position: relative; height: 304px; width: 304px; margin: 200px auto;}
+      .box>.box-con{float: left; width: 150px; height: 150px; border: 1px dotted #fff;}
+      .box>.wrap{position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 128,0, .5);transform:skewy(30deg) skewx(10deg);}
+    </style>
+
+  </head>
+  <body>
+    <div class="box">
+        <div class="box-con"></div>
+        <div class="box-con"></div>
+        <div class="box-con"></div>
+        <div class="box-con"></div>
+        <div class="wrap"></div>
+    </div>
+  
+
+</body></html>
